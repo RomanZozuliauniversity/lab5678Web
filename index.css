@@ -1,0 +1,9 @@
+:root{
+    background: antiquewhite;
+}
+.Taskfirst{
+    background:rgb(230, 162, 74);
+}
+#array1,#array2,.result{
+    border-radius: 40px;
+}
