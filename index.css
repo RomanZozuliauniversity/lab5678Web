@@ -4,6 +4,37 @@
 .Taskfirst{
     background:rgb(230, 162, 74);
 }
-#array1,#array2,.result{
-    border-radius: 40px;
+.Tasksecond{
+    background-color: rgb(255, 189, 142);
 }
+.Tasksthird{
+    background-color: rgb(255, 144, 0);
+}
+.Tasksfourth{
+  background-color: coral;
+}
+.Tasksfifth{
+  background-color: rgb(245, 151, 116);
+}
+
+label,input, button{
+  border-radius: 40px;
+  font-size: 21px;
+}
+p,h2{
+    font-size: 21px;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 10px;
+    text-align: center;
+  }
+  th {
+    background-color: #ccc;
+  }
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
