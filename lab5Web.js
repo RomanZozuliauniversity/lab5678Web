@@ -57,10 +57,8 @@ function isPrime(n) {
     const numbers = input.split(",");
     const resultTable = document.getElementById("result4");
     
-    // clear previous results
     resultTable.innerHTML = "";
-    
-    // add header row
+  
     const headerRow = document.createElement("tr");
     const numberHeader = document.createElement("th");
     numberHeader.textContent = "Число";
@@ -86,3 +84,5 @@ function isPrime(n) {
       resultTable.appendChild(row);
     }
   }
+
+  
