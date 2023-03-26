@@ -1,28 +1,86 @@
-:root{
-    background: antiquewhite;
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Poppins:wght@400;700&display=swap');
+
+:root {
+    background-color: bisque;
 }
-.Taskfirst{
-    background:rgb(230, 162, 74);
+
+.dachshund_img{
+    display: flex;
+    width: 1400px;
+    height: 400px;
+    object-fit: cover;
+
 }
-.Tasksecond{
-    background-color: rgb(255, 189, 142);
+
+h1 {
+    font-family: 'Bungee Spice', cursive;
+    font-size: 2.5rem;
 }
-.Tasksthird{
-    background-color: rgb(255, 144, 0);
+
+.about {
+    word-spacing: 6px;
+    direction: ltr;
+    color: blue;
+    text-shadow: sandybrown 0.2em 0.3em 0.2em;
 }
-.Tasksfourth{
-  background-color: coral;
+
+h4,h3,h2 {
+    font-family: 'Bungee Spice', cursive;
+    font-size: 2 rem;
+}
+
+.placeholder_dachshund {
+    background-color: bisque;
+    border-radius: 24px;
+
+}
+
+
+.label__dachshund {
+    border-radius: 24px;
+    background-color: sandybrown;
+}
+
+.form {
+    display: block;
+    position: relative;
+
+  }
+  
+.form::after {
+    content: "";
+    background: url(taksa.jpg);
+    background-size: cover;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+  .factaboutDachshund{
+    background: rgb(236, 126, 35);
+    padding: 10px;
+    margin-bottom: 36px;
+    column-count: 3; /* CSS3 */
+ 
+  }
+  .factaboutDachshund>p {
+    margin: 0px;
+    border-right: 1px solid #1a1818;
 }
 .Tasksfifth{
-  background-color: rgb(245, 151, 116);
+  background-color: rgb(255, 202, 136);
+
 }
-
-
 label,input, button{
   border-radius: 40px;
   font-size: 21px;
 }
-p,h2{
+p{
     font-size: 21px;
 }
 table, th, td {
@@ -39,3 +97,15 @@ table, th, td {
   tr:nth-child(even) {
     background-color: #f2f2f2;
   }
+.Taskfirst{
+    background-color: rgb(240, 132, 1);
+}
+.Tasksecond{
+  background-color: rgb(247, 205, 153);
+}
+.Tasksthird{
+ background-color: rgb(252, 161, 128);
+}
+.Tasksfourth{
+  background-color: rgb(255, 170, 0);
+}

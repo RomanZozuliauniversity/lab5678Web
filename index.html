@@ -10,13 +10,14 @@
 </head>
 
 <body>
+  <h1>Dachshund</h1>
+  <p class="factaboutdachshund"> <b> The dachshund</b>, also known as the wiener dog,
+        badger dog, and sausage dog, is a short-legged, long-bodied, hound-type dog breed.
+        The dog may be smooth-haired, wire-haired, or long-haired, and comes in a variety of colors.</p>
+
+
+
     <div class="Taskfirst">
-        <h2>Task 1</h2>
-        <p>На сторінці зображено 2 поля введення. В обидва текстові рядки
-            вводяться серія значень, розділених комою (значення числові). <br>При
-            натисканні на кнопку має виконатись функція. Функція формує 2
-            масиви і на основі їх формує третій масив який є містить <br>елементи які є
-            не спільними цих масивів. Результатний масиву виводиться на екран у абзаці.</p>
         <label for="array1">Array 1:</label>
         <input type="text" id="array1"><br><br>
         <label for="array2">Array 2:</label>
@@ -25,9 +26,6 @@
         <p id="resultfirst"></p>
     </div>
     <div class="Tasksecond">
-        <h2>Task 2</h2>
-        <p>Створити функцію, яка буде виводити стовпчик зі значеннями по
-            спаданню від n до 0 (значення n вводиться в текстовому полі на формі).</p>
         <label class="tasksecondbutton" for="numberInput">Enter the number n:</label>
         <input type="number" id="numberInput">
         <button class="tasksecondbutton" onclick="printDescending()">Display column</button>
@@ -35,13 +33,7 @@
 
     </div>
     <div class="Tasksthird">
-        <h2>Task 3</h2>
-        <p>В текстовий рядок вводяться число. При натисканні на кнопку має
-            виконатись функція. Функція створює масив, в якому перший елемент
-            <br>містить значення 'x', другий - 'xx', і т.д. Кількість елементів – число
-            введене в текстовому рядку. Отриманий масив має бути виведений у
-            <br>абзаці або в діалоговому вікні типу alert.
-        </p>
+    
         <label for="number-input">Enter a number:</label>
         <input type="number" id="number-input">
         <button onclick="generateArray()">Create an array</button>
@@ -49,24 +41,12 @@
 
     </div>
     <div class="Tasksfourth">
-        <h2>Task 4</h2>
-        <p>В текстовий рядок вводяться числа розділені комою. При натисканні на
-            кнопку має виконатись функція. Функція має перевіряти,<br> чи введені
-            числа є простими. Результат вивести у таблиці. Число — значення.
-            Табличку можна створити заздалегідь. </p>
         <label for="numbers">Enter numbers separated by commas:</label>
         <input type="text" id="numbers">
         <button onclick="checkPrimeNumbers()">Check</button>
         <table id="result4"></table>
      </div>
     <div class="Tasksfifth">
-        <h2>Task 5</h2>
-        <p>На сторінці розміщено 5+ блоків, які складаються з текстового поля та поля вводу типу checkbox.
-             В текстові поля вводити виключно числа. При натисненні кнопки, перевірити коректність введених даних,
-              якщо є помилки повідомити користувача через alert. Окрім цього сформувати масив з числових значень,
-               з умовою, якщо у відповідному блоці checkbox активний, у масив записується число у двічі менше за вхідне. 
-               Вивести сформований масив у абзац.
-        </p>
         <div>
             <label>Field 1:</label>
             <input type="text" id="input1">
@@ -100,6 +80,52 @@
           <button onclick="validateAndCreateArray()">Create Array</button>
         
           <p>Result: <span id="result"></span></p>
+    </div>
+    <img src="john.jpg" alt="john" style="width: 300px;">
+    <div class="links">
+        <h3>Our contacts</h3>
+        <ul>
+            <li><a href="https://www.instagram.com/">instagram</a></li>
+            <li><a href="https://www.facebook.com/">facebook</a></li>
+            <li><a href="https://twitter.com/?lang=uk">twitter</a></li>
+        </ul>
+    </div>
+
+    <div class="form">
+        <h3 id="Contactus">Contact us</h3>
+        <h4>we are open with 9 march 2023</h4>
+        <table style="width:40%">
+            <tr>
+                <td style="background-color: red;">
+                    <p>Full name <sup>*</sup></p>
+                    <input class="placeholder_dachshund" type="text" placeholder="Full name" required>
+                </td>
+                <td style="background-color: green;">
+                    <p>Email<sup>*</sup></p>
+                    <input class="placeholder_dachshund" type="text" placeholder="Email" required>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: yellow;">
+                    <p>Phone number<sup>*</sup></p>
+                    <input class="placeholder_dachshund" type="text" placeholder="Phone number" required>
+                </td>
+                <td style="background-color: rgb(142, 103, 56);">
+                    <p>Country<sup>*</sup></p>
+                    <input class="placeholder_dachshund" type="text" placeholder="Country" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="background-color: blueviolet;">
+                    <p>Message<sup>*</sup></p>
+                    <textarea rows="5" cols="20">Message</textarea>
+                </td>
+            </tr>
+        </table> <br>
+        <label for="loving"><input type="radio" name="secret_value" value="12345"> <strong> I want to receive weekly
+                updates </strong></label><br><br>
+        <button class="label__dachshund" type="submit"><b>&nbsp&nbspSend message&nbsp&nbsp</b></button>
     </div>
     <script src="lab5Web.js"></script>
 </body>
