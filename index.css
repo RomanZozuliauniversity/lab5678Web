@@ -7,12 +7,23 @@
 }
 
 .dachshund_img {
+
   display: flex;
   width: 1400px;
   height: 400px;
-  object-fit: cover;
-
 }
+.photo1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 20px;
+} 
+.photo2{
+  margin: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+} 
 
 h1 {
   font-family: 'Bungee Spice', cursive;
@@ -73,10 +84,7 @@ button {
 
 }
 
-.factaboutDachshund>p {
-  margin: 0px;
-  border-right: 1px solid #1a1818;
-}
+
 
 
 label,
@@ -85,8 +93,9 @@ input,textarea {
   font-size: 21px;
 }
 
-p {
+p{
   font-size: 21px;
+  background-color: rgb(248, 202, 146);
 }
 
 table,

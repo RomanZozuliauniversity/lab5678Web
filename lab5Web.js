@@ -168,4 +168,7 @@ function checkURL() {
     alert("Це не URL-адреса.");
   }
 }
+
+//lab7
+
   
