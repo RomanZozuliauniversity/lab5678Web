@@ -1,3 +1,4 @@
+//lab5
 //1
 function compareArrays() {
 
@@ -122,5 +123,49 @@ function validateAndCreateArray() {
   
   const result = document.getElementById("result");
   result.textContent = newArray.join(", ");
+}
+//lab6 
+//1
+function validateExtesion(){
+  const extesion =document.getElementById('Extesion').value;
+  const pattern =/\.(txt|html|php)$/i;
+  if (pattern.test(extesion)){
+    alert('extesion is correct');
+  }else{
+    alert('Invalid extesion entered');
+  }
+}
+//2
+function validateDomain() {
+    const domain = document.getElementById('domain').value;
+    const pattern = /^(http|https):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/;
+    if (pattern.test(domain)) {
+      alert('domain is correct');
+    } else {
+      alert('Invalid domain entered');
+    }
+  }
+//3
+function replaceSpaces() {
+  let inputText = document.getElementById("taskThird").value;
+  let replacedText = inputText.replace(/\s+/g, ' ');
+  document.getElementById("taskThird").value = replacedText;
+}
+//4
+function removeComments() {
+  let inputText = document.getElementById("taskFourth").value;
+  let removedComments = inputText.replace(/<!--[\s\S]*?-->/g, '');
+  document.getElementById("taskFourth").value = removedComments;
+}
+//5
+function checkURL() {
+  let inputText = document.getElementById("taskFifth").value;
+  let urlPattern = /^(http|https)?:\/\//i;
+  let isURL = urlPattern.test(inputText);
+  if (isURL) {
+    alert("Це URL-адреса!");
+  } else {
+    alert("Це не URL-адреса.");
+  }
 }
   

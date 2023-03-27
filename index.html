@@ -119,13 +119,29 @@
             <tr>
                 <td style="background-color: blueviolet;">
                     <p>Message<sup>*</sup></p>
-                    <textarea rows="5" cols="20">Message</textarea>
+                    <textarea rows="5" cols="20"></textarea>
                 </td>
             </tr>
         </table> <br>
         <label for="loving"><input type="radio" name="secret_value" value="12345"> <strong> I want to receive weekly
                 updates </strong></label><br><br>
         <button class="label__dachshund" type="submit"><b>&nbsp&nbspSend message&nbsp&nbsp</b></button>
+    </div>
+    <div class="taskFirst">
+        <label for="Extesion">Enter the extesion:</label>
+        <input type="text" id="Extesion" name="Extesion">
+        <button type="button" onclick="validateExtesion()">Check</button>
+        <label for="domain">Enter the domain with the protocol:</label>
+        <input type="text" id="domain" name="domain">
+        <button type="button" onclick="validateDomain()">Check</button>
+    </div>
+    <div class="taskThird">
+        <textarea name="text" id="taskThird" cols="20" rows="1"></textarea>
+        <button onclick="replaceSpaces()">Replace punched</button>
+        <textarea name="text" id="taskFourth" cols="20" rows="1"></textarea>
+        <button onclick="removeComments()">Delete comments</button>
+        <textarea name="text" id="taskFifth" cols="20" rows="1"></textarea>
+        <button onclick="checkURL()">Перевірити URL</button>
     </div>
     <script src="lab5Web.js"></script>
 </body>
