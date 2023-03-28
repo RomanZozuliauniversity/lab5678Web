@@ -1,7 +1,6 @@
 //lab5
 //1
 function compareArrays() {
-
     var array1 = document.getElementById("array1").value;
     var array2 = document.getElementById("array2").value;
 
@@ -101,10 +100,7 @@ function validateAndCreateArray() {
 
   const inputs = [input1, input2, input3, input4, input5];
   const checkboxes = [checkbox1, checkbox2, checkbox3, checkbox4, checkbox5];
-
   const values = [];
-
-
   for (let i = 0; i < inputs.length; i++) {
     const value = parseInt(inputs[i].value);
     if (isNaN(value)) {
@@ -113,17 +109,16 @@ function validateAndCreateArray() {
     }
     values.push(value);
   }
-
   const newArray = [];
   for (let i = 0; i < values.length; i++) {
     if (checkboxes[i].checked) {
       newArray.push(values[i] / 2);
     }
   }
-  
   const result = document.getElementById("result");
   result.textContent = newArray.join(", ");
 }
+
 //lab6 
 //1
 function validateExtesion(){
@@ -170,5 +165,35 @@ function checkURL() {
 }
 
 //lab7
+//1
+function getThirdword(){
+  const inputTextword = document.getElementById('taskFirst').value; 
+  const splitWord = inputTextword.split(" ");
+  const thirdword = splitWord[2];
+  alert( thirdword );
+}
+//2
+function yesterdayDayOfWeek() {
+  const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  const today = new Date();
+  const yesterdayIndex = (today.getDay() + 6) % 7;
+  const yesterday = daysOfWeek[yesterdayIndex];
+  const output = document.getElementById('outputdayofweek');
+  output.textContent = `Yesterday was ${yesterday}.`;
+}
+//3
+function calculateSquareRoot() {
+  // отримуємо введене число
+  const input = document.getElementById('inputThirdLab').value;
+  if (input>0){
+    const squareRoot = Math.round(Math.sqrt(input));
 
-  
+    // виводимо результат у повідомленні
+    const output = document.getElementById('outputThirdLab');
+    output.textContent = `The square root of ${input} is ${squareRoot}.`;
+  }else if (input<0){
+    alert("Invalid number entered");
+  }else{
+    alert("You did not inputed a value");
+  }
+}

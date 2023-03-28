@@ -12,18 +12,20 @@
   width: 1400px;
   height: 400px;
 }
-.photo1{
+
+.photo1 {
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin: 20px;
-} 
-.photo2{
+}
+
+.photo2 {
   margin: 20px;
   display: block;
   margin-left: auto;
   margin-right: auto
-} 
+}
 
 h1 {
   font-family: 'Bungee Spice', cursive;
@@ -88,12 +90,13 @@ button {
 
 
 label,
-input,textarea {
+input,
+textarea {
   border-radius: 40px;
   font-size: 21px;
 }
 
-p{
+p {
   font-size: 21px;
   background-color: rgb(248, 202, 146);
 }
@@ -119,39 +122,47 @@ tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 
-.Taskfirst {
-  margin-top: 50px;
-  background-color: rgb(241, 174, 92);
-}
 
-.Tasksecond {
-  background-color: rgb(247, 205, 153);
-}
-
+.taskFirst,
+.Taskfirst,
 .Tasksthird {
-  background-color: rgb(252, 161, 128);
+  background-color: rgb(248, 203, 141);
 }
 
-.Tasksfourth {
-  background-color: rgb(255, 170, 0);
+.taskThird,
+.Tasksecond,
+.Tasksfourth,
+.taskFisrtLab,
+.taskThirdLab {
+  background-color: rgb(255, 190, 98);
 }
 
-.taskFirst {
-  background-color: rgb(251, 220, 178);
+.labseven {
+  display: flex;
+  flex-direction: column;
+}
+.labEight{
+  margin: 20px;
+  height: 70px;
+  width: 200px;
 }
 
-.taskSecond {
-  background-color: rgb(252, 208, 66);
+.taskFirstlabEight {
+  display: block;
+  box-sizing: border-box;
+  padding: 20px 50px;
+  font-family: 'Bungee Spice', cursive;;
+  text-decoration: none;
+  font-style: normal;
+  font-size: 25px;
+  line-height: 25px;
+  background-color: rgb(248, 203, 141);
+  border-color: rgb(255, 190, 98) ;
+  border-width: 2px;
+  border-radius: 27px;
+  border-style: solid;
 }
 
-.taskThird {
-  background-color: rgb(255, 190, 98)
-}
-
-.taskFourth {
-  background-color: rgb(255, 174, 75);
-}
-
-.taskFifth {
-  background-color: rgb(228, 137, 0);
+.taskFirstlabEight:hover {
+  background-color: rgb(248, 173, 68);
 }
