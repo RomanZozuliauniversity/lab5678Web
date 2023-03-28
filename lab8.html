@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,34 @@
 	<link rel="stylesheet" href="css/lab8.css">
 	<title>Lab8</title>
 </head>
+
 <body>
-	<label for="input">Enter text:</label>
-	<input type="text" id="input">
+	<div class="general">
+		<div class="first">
+			<label for="input">Enter text:</label>
+			<input type="text" id="input">
+		</div>
+		<div class="second">
+			<div class="super">
+				<form>
+					<label for="element">Selected items:</label>
+					<select id="element">
+						<option value="element1">element1</option>
+						<option value="element2">element2</option>
+						<option value="element3">element3</option>
+						<option value="element4">element4</option>
+						<option value="element5">element5</option>
+					</select>
+			</div>
+			<div class="puper">
+				<label for="result">Selected item:</label>
+				<input type="text" id="result" value="Selected items" readonly>
+			</div>
+			</form>
+		</div>
+	</div>
 	<script src="js/lab8.js"></script>
+
 </body>
+
 </html>
