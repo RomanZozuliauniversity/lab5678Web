@@ -185,6 +185,7 @@ function yesterdayDayOfWeek() {
 function calculateSquareRoot() {
   // отримуємо введене число
   const input = document.getElementById('inputThirdLab').value;
+  
   if (input>0){
     const squareRoot = Math.round(Math.sqrt(input));
 
