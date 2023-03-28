@@ -15,5 +15,5 @@ const elementSelect = document.getElementById('element');
 const resultInput = document.getElementById('result');
 elementSelect.addEventListener('change', function() {
   const selectedOption = elementSelect.options[elementSelect.selectedIndex];
-  resultInput.value = 'Selected item: ' + selectedOption.text;
+  resultInput.value = 'Selected name: ' + selectedOption.text;
 });

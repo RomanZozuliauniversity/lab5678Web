@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 
 :root {
     background-color: bisque;
@@ -42,3 +43,30 @@ input {
 input.clicked {
     background-color: red;
 }
+.factaboutDachshund {
+    font-family: 'Raleway', sans-serif;
+    font-weight:bold ;
+    font-size: 21px;
+    padding: 10px;
+    margin-bottom: 36px;
+    column-count: 3;
+  
+  }  
+.dachshund_img {
+    display: flex;
+    width: 1400px;
+    height: 400px;
+  }
+.photo1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 20px;
+  }
+  
+  .photo2 {
+    margin: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
